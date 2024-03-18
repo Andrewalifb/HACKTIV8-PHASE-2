@@ -7,16 +7,12 @@ import (
 
 func printNumbers(num int, wg *sync.WaitGroup) {
 	defer wg.Done()
-
 		fmt.Println(num)
-
 }
 
 func printLetters(letter string, wg *sync.WaitGroup) {
 	defer wg.Done()	
-
 		fmt.Println(letter)
-
 }
 func main() {
 	var wg sync.WaitGroup
